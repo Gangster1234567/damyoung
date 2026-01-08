@@ -14,9 +14,11 @@ export default function Letter() {
             내 편지를 읽어 줄래?
           </p>
 
-          <div className="letter-button">
-            <button onClick={() => nav("/home")}>집으로!</button>
-          </div>
+          <div className="letter-actions">
+            <button className="time-btn" onClick={() => nav("/home")} type="button">
+          집으로!
+            </button>
+            </div>
         </div>
       </div>
     </div>
