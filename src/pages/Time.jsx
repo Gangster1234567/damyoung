@@ -1,7 +1,6 @@
 import { useMemo } from "react";
 import { useNavigate } from "react-router-dom";
 
-// ✅ 이미지 import (파일 확장자 맞게 바꿔줘: .jpg / .png)
 import m6 from "../assets/time/m6.jpg";
 import m7 from "../assets/time/m7.jpg";
 import m8 from "../assets/time/m8.jpg";
@@ -14,10 +13,9 @@ import m1 from "../assets/time/m1.jpg";
 export default function Time() {
   const nav = useNavigate();
 
-  // ✅ 여기 month/text만 너희 서사대로 바꾸면 됨!
   const months = useMemo(
     () => [
-      { key: "m6",  month: "25년 6월",  img: m6,  text: "우리 이때 어색하고 알아갈 길이 멀었지? 🤭🌱" },
+      { key: "m6",  month: "25년 6월",  img: m6,  text: "우리 이때는 아직 어색하고, 알아갈 길이 멀었었지? 🤭🌱" },
       { key: "m7",  month: "25년 7월",  img: m7,  text: "사랑하기 시작했고, 많이 붙어있었지💞" },
       { key: "m8",  month: "25년 8월",  img: m8,  text: "잠깐의 위기가 존재했지만 이겨낸 우리!!⚠️" },
       { key: "m9",  month: "25년 9월",  img: m9,  text: "동거 시작! 우리 감정이 날로 깊어지고 있어!🏠💗" },
@@ -31,7 +29,6 @@ export default function Time() {
 
   return (
     <div className="time-wrap">
-      {/* 타이틀: Home/Letter/Quiz 톤 그대로 */}
       <h1 className="time-title">TIME</h1>
 
       {/* 타임라인 */}
