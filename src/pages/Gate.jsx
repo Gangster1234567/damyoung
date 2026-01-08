@@ -43,7 +43,7 @@ export default function Gate() {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    if (pin.length !== 4) fail("4자리로 입력해줘");
+    if (pin.length !== 4) fail("땡! 다시 생각해봐 💭");
   };
 
   return (

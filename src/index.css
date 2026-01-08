@@ -355,7 +355,7 @@ body {
   .home-couple img { width: 110px; }
 
   .home-menu {
-    margin-top: 220px;      /* 기존 유지 */
+    margin-top: 150px;      /* 기존 유지 */
     flex-direction: column;
     align-items: center;
     gap: 20px;
